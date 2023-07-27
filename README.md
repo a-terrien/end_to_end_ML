@@ -14,7 +14,7 @@ or git clone https://github.com/a-terrien/end_to_end_ML.git
 
 Then to add licence and gitignore fill, go on the github repository:
 go in the tab "Code"
-![image_1](image/image.png)
+![README_1](image/README_1.png)
 
 
 
