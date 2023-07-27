@@ -14,7 +14,7 @@ or git clone https://github.com/a-terrien/end_to_end_ML.git
 
 Then to add licence and gitignore fill, go on the github repository:
 go in the tab "Code"
-![Alt text](<Capture d’écran 2023-07-27 à 17.45.45.png>)
+![image_1](image/image.png)
 
 
 
