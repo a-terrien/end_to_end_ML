@@ -1,0 +1,28 @@
+[
+    {"MedInc":3.512,
+    "HouseAge":16.0,
+    "AveRooms":3.7622873346,
+    "AveBedrms":1.0756143667,
+    "Population":5014.0,
+    "AveOccup":2.3695652174,
+    "Latitude":33.67,
+    "Longitude":-117.91},
+
+    {"MedInc":3.65,
+    "HouseAge":10.0,
+    "AveRooms":5.5020920502,
+    "AveBedrms":1.0603705918,
+    "Population":5935.0,
+    "AveOccup":3.5475194262,
+    "Latitude":37.82,
+    "Longitude":-121.28},
+
+    {"MedInc":3.052,
+    "HouseAge":17.0,
+    "AveRooms":3.3557814485,
+    "AveBedrms":1.0196950445,
+    "Population":4116.0,
+    "AveOccup":2.6149936468,
+    "Latitude":34.15,
+    "Longitude":-118.24}
+]

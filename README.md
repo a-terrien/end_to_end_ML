@@ -79,3 +79,20 @@ git config`--global --list
 git config --local ...
 ```
 
+```
+# Updates all the modification/creation/deletion done in the local repository
+git add .
+
+# Creates an explanation or message for the previous action 
+git commit -m "message around files has being modified, added or deleted" 
+
+# Updates the github distant repository linked to the local one
+git push 
+
+# Verify actions were correctly done
+git status
+git log
+
+```
+if you want more informations on git commands, go directly on the official documentation such as :
+[link](https://www.atlassian.com/git/tutorials/setting-up-a-repository). 
