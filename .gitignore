@@ -162,3 +162,6 @@ cython_debug/
 
 # Hide virtual environment folder
 venv
+trash
+code
+image
