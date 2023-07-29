@@ -7,7 +7,7 @@ import pandas as pd
 app=Flask(__name__)
 
 # Load the model
-regmodel = joblib.load('../models/regmodel.joblib')
+regmodel = joblib.load('models/regmodel.joblib')
 
 @app.route('/')
 # home page

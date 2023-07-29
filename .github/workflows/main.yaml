@@ -1,0 +1,37 @@
+# Votre nom de workflow.
+name: Déploiement sur Render
+
+# Exécutez le workflow à chaque push sur la branche main.
+on:
+  push:
+    branches: [main]
+
+# Vos tâches de workflow.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Vérifier votre dépôt.
+      - name: Checkout
+        uses: actions/checkout@v2
+
+### ⬇ PARTIE IMPORTANTE ⬇ ###
+
+      - name: Build, Push et Déploiement d'un conteneur Docker sur Render # Votre nom d'étape personnalisé
+        uses: docker/build-push-action@v2 # Nom de l'action GitHub pour Docker (laissez-le tel quel).
+        with:
+          # Vous devez fournir ci-dessous les variables pour votre application Render.
+
+          # Le nom de votre image Docker. Vous pouvez le nommer comme vous le souhaitez.
+          # Par exemple, my-app-image:latest
+          context: ./app # Emplacement de votre fichier Dockerfile et des fichiers à inclure dans l'image
+          push: true
+          tags: renderapp:latest # Le tag que vous souhaitez donner à l'image
+
+      - name: Déploiement sur Render
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.RENDER_SERVICE_ID }} # Remplacez RENDER_SERVICE_ID par le secret de votre service Render
+          api-key: ${{ secrets.RENDER_API_KEY }} # Remplacez RENDER_API_KEY par votre clé API Render
+
+### ⬆ FIN DE LA PARTIE IMPORTANTE ⬆ ###
